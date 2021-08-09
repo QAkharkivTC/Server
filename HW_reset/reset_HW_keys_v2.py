@@ -10,8 +10,6 @@ from requests_pkcs12 import post
 from requests import Session
 from requests_pkcs12 import Pkcs12Adapter                       # pip install requests_pkcs12
 
-
-# https://crm.trueconf.com/server/view/AA112&act=resethw&comment=111
 # https://pypi.org/project/requests-pkcs12/
 # https://gist.github.com/erikbern/756b1d8df2d1487497d29b90e81f8068
 
@@ -26,10 +24,7 @@ headers = {
            'Accept-Language': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7',  
            'Content-Length': '32', 
            'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
-           #'Cookie': '_ga=GA1.2.1332897830.1614871631; rl_anonymous_id=%2247e2eef8-5e9a-4bc2-bd66-fe04da37c691%22;'+
-           #'rl_trait=%7B%7D; rl_user_id=%22dy6pbqybfjddbmf1oq37sqjsee%22; _hjid=302beb92-8140-40d6-83fa-53b35387b313; PHPSESSID=kqf8c2kk4ik25tck9bbm25q8n2',
            'Origin': 'https://crm.trueconf.com',
-           #'Referer': 'https://crm.trueconf.com/server/view/AA111',
            'sec-ch-ua': '" Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"',
            'sec-ch-ua-mobile': '?0',
            'sec-fetch-dest': 'empty',
@@ -77,7 +72,6 @@ def rest_HW():
     
     for i in range(len(list_keys)):
         with Session() as s:
-            #s.mount('https://crm.trueconf.com', Pkcs12Adapter(pkcs12_filename='apukhtin.p12', pkcs12_password='5G2d6jFnH2ap'))
             s.mount('https://crm.trueconf.com', Pkcs12Adapter(pkcs12_filename=filename, pkcs12_password=password))
             r = s.get('https://crm.trueconf.com/server/view/'+str(list_keys[i])+'')
             #print(r.text)
