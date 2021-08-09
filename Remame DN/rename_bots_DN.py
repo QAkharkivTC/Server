@@ -10,8 +10,6 @@ import io
 import chardet
 import codecs
 
-# https://10.130.0.32/api/v3.2/users?&&page_size=200&login_name=bot&display_name=bot&first_name=bot&last_name=bot&email=bot
-
 list_user_id = []
 
 def make_list_users(ip, token, user_DN):                                #составляю список id тех у кого буду менять dn
@@ -73,8 +71,8 @@ def rename_users(ip, token):                                #сама функц
     print(list_user_id)
     
     for i in range(len(list_user_id)):
-        name = get_random_name_surname(random.randint(1, 400), 'name')
-        surname = get_random_name_surname(random.randint(1, 400), 'surname')
+        name = get_random_name_surname(random.randint(1, 400), 'name')          #тут меняем количество записей из исходного файла с именами
+        surname = get_random_name_surname(random.randint(1, 400), 'surname')    #тут меняем количество записей из исходного файла с именами
         
         r = requests.put('https://'+ip+'/api/v3.3/users/'+list_user_id[i]+'?access_token='+token+'', data= {
              
@@ -101,12 +99,9 @@ source= "test_name.csv"
 
 
 
-ip = '10.130.0.32'
-#ip = 'qa3.trueconf.net'
-
-token = '1Top3R0Hb81vGUZMkbDBGbdtUmPZVPX6'
-
-user_DN = 'test_100'
+ip = '10.130.0.32'              #указывае/заменяем на адрес сервера
+token = 'token'                 #перед запускам указываем токен сервера
+user_DN = 'test_100'            #указываем префикс id пользователей (ботов) по которым необходимо выполнить замену dn
 
 
 rename_users(ip, token)    
