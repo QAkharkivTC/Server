@@ -1,0 +1,1761 @@
+{
+	"info": {
+		"_postman_id": "bf8dfd74-6262-41b9-b5c6-7c99f51b6f02",
+		"name": "API Trueconf Server",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Call Invite List",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/api/v3.3/logs/calls/0000000d87f7a081@aa111.trueconf.name%23vcs/invites",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"logs",
+						"calls",
+						"0000000d87f7a081@aa111.trueconf.name%23vcs",
+						"invites"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Call List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.3/logs/calls",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"logs",
+						"calls"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Call Participant List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.3/logs/calls/0000000fa38221e3@aa111.trueconf.name%23vcs/participants",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"logs",
+						"calls",
+						"0000000fa38221e3@aa111.trueconf.name%23vcs",
+						"participants"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Call Record",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.3/logs/records/0000000fa38221e3@aa111.trueconf.name%23vcs",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"logs",
+						"records",
+						"0000000fa38221e3@aa111.trueconf.name%23vcs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Call",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.3/logs/calls/0000000fa38221e3@aa111.trueconf.name%23vcs",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"logs",
+						"calls",
+						"0000000fa38221e3@aa111.trueconf.name%23vcs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Event List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.3/logs/events",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"logs",
+						"events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Message List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.3/logs/messages",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"logs",
+						"messages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Recording List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.3/logs/recordings",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"logs",
+						"recordings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Recording",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.3/logs/recordings/2",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"logs",
+						"recordings",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Setting List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.3/logs/settings",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"logs",
+						"settings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Software Clients - Get Client List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.3/software/clients",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"software",
+						"clients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Conference Templates - Create Conference Template",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"id\": \"8b566f97\",\r\n     \"name\": \"test\",\r\n     \"created_at\": 1523401234,\r\n     \"updated_at\": 1523412345,\r\n     \"creator_id\": null,\r\n     \"object\": {\r\n            \"id\": \"webinar\",\r\n            \"type\": 0,\r\n            \"topic\": \"Topic of conference\",\r\n            \"owner\": \"11@aa111.trueconf.name\",\r\n            \"description\": \"Description of conference\",\r\n            \"max_podiums\": 25,\r\n            \"max_participants\": 25,\r\n            \"schedule\": {\"type\": -1},\r\n            \"invitations\": [\r\n                {\"id\": \"user1@aa111.trueconf.name\"},\r\n                {\"id\": \"user2@aa111.trueconf.name\"}\r\n            ]\r\n        }\r\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/api/v3.3/templates/conferences",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"templates",
+						"conferences"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Conference Templates - Delete Conference Template",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.3/templates/conferences/b403104b",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"templates",
+						"conferences",
+						"b403104b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Conference Templates - Edit Conference Template",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"id\": \"8b566f97\",\r\n     \"name\": \"test\",\r\n     \"created_at\": 1523401234,\r\n     \"updated_at\": 1523412345,\r\n     \"creator_id\": null,\r\n     \"object\": {\r\n            \"id\": \"test2\",\r\n            \"type\": 0,\r\n            \"topic\": \"Topic of conference22\",\r\n            \"owner\": \"11@aa111.trueconf.name\",\r\n            \"description\": \"Description of conference\",\r\n            \"max_podiums\": 25,\r\n            \"max_participants\": 25,\r\n            \"schedule\": {\"type\": -1},\r\n            \"invitations\": [\r\n                {\"id\": \"user1@aa111.trueconf.name\"},\r\n                {\"id\": \"user2@aa111.trueconf.name\"}\r\n            ]\r\n        }\r\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/api/v3.3/templates/conferences/ec38c2cd",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"templates",
+						"conferences",
+						"ec38c2cd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Conference Template List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.3/templates/conferences",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"templates",
+						"conferences"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Conference Template",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.3/templates/conferences/ec38c2cd",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"templates",
+						"conferences",
+						"ec38c2cd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Conferences - Conference Invite",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"participants\":\r\n        {\"id\":\"11@aa111.trueconf.name\"}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/api/v3.3/conferences/6560724961/invite",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"conferences",
+						"6560724961",
+						"invite"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Conferences - Conference Notify",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.3/conferences/6560724961/notify",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"conferences",
+						"6560724961",
+						"notify"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Conferences - Conference Record Pause",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.2/conferences/111/pause-record",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.2",
+						"conferences",
+						"111",
+						"pause-record"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Conferences - Conference Record Start",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.2/conferences/111/start-record",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.2",
+						"conferences",
+						"111",
+						"start-record"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Conferences - Conference Record Stop",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.2/conferences/111/stop-record",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.2",
+						"conferences",
+						"111",
+						"stop-record"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Conferences - Create Conference",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"id\": \"111111\",\r\n            \"type\": 3,\r\n            \"topic\": \"111\",\r\n            \"owner\": \"33@aa111.trueconf.name\",\r\n            \"description\": \"\",\r\n            \"max_podiums\": 36,\r\n            \"max_participants\": 60,\r\n            \"schedule\": {\r\n                \"type\": -1\r\n            },\r\n            \"invitations\": [\r\n                {\r\n                    \"id\": \"11\",\r\n                    \"display_name\": \"11\"\r\n                },\r\n                {\r\n                    \"id\": \"22\",\r\n                    \"display_name\": \"22\"\r\n                },\r\n                {\r\n                    \"id\": \"33\",\r\n                    \"display_name\": \"33\"\r\n                }\r\n            ],\r\n            \"allow_guests\": true,\r\n            \"auto_invite\": 0,\r\n            \"state\": \"running\",\r\n            \"url\": \"http://localhost/c/111\",\r\n            \"webclient_url\": \"http://localhost/webrtc/111\",\r\n            \"created_at\": 1614163608,\r\n            \"multicast_enable\": false,\r\n            \"multicast_address\": null,\r\n            \"tags\": [],\r\n            \"recording\": 0,\r\n            \"stream_recording_state\": 0,\r\n            \"rights\": {\r\n                \"guest\": {\r\n                    \"chat_send\": true,\r\n                    \"chat_rcv\": true,\r\n                    \"slide_show_send\": true,\r\n                    \"slide_show_rcv\": true,\r\n                    \"white_board_send\": true,\r\n                    \"white_board_rcv\": true,\r\n                    \"file_transfer_send\": true,\r\n                    \"file_transfer_rcv\": true,\r\n                    \"desktop_sharing\": true,\r\n                    \"recording\": true,\r\n                    \"audio_send\": true,\r\n                    \"audio_rcv\": true,\r\n                    \"video_send\": true,\r\n                    \"video_rcv\": true\r\n                },\r\n                \"user\": {\r\n                    \"chat_send\": true,\r\n                    \"chat_rcv\": true,\r\n                    \"slide_show_send\": true,\r\n                    \"slide_show_rcv\": true,\r\n                    \"white_board_send\": true,\r\n                    \"white_board_rcv\": true,\r\n                    \"file_transfer_send\": true,\r\n                    \"file_transfer_rcv\": true,\r\n                    \"desktop_sharing\": true,\r\n                    \"recording\": true,\r\n                    \"audio_send\": true,\r\n                    \"audio_rcv\": true,\r\n                    \"video_send\": true,\r\n                    \"video_rcv\": true\r\n                }\r\n            },\r\n            \"broadcast_enabled\": false,\r\n            \"broadcast_id\": null,\r\n            \"broadcast\": null,\r\n            \"allow_only_planned_participants\": false,\r\n            \"stream_id\": \"0000000fa38221e3@aa111.trueconf.name#vcs\",\r\n            \"deeplinks\": {\r\n                \"default\": \"trueconf:&conftype=multi\",\r\n                \"android\": \"intent:%26conftype%3dmulti#Intent;scheme=visicall;package=com.trueconf.videochat;end\"\r\n            },\r\n            \"connect_urls\": {\r\n                \"sip_external\": null,\r\n                \"sip\": [\r\n                    \"00111@10.130.2.63\"\r\n                ],\r\n                \"h323\": [\r\n                    \"10.130.2.63##00111\"\r\n                ]\r\n            },\r\n            \"waiting_room_enabled\": false,\r\n            \"waiting_room_scope\": \"all\",\r\n            \"waiting_room_list\": []\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/api/v3.3/conferences",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"conferences"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Conferences - Delete Conference",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.3/conferences/111111",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"conferences",
+						"111111"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Conferences - Edit Conference",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/api/v3.3/conferences/111111?url_type=fixed",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"conferences",
+						"111111"
+					],
+					"query": [
+						{
+							"key": "url_type",
+							"value": "fixed"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Conferences - Get Conference Calendars",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.3/conferences/200014/calendars",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"conferences",
+						"200014",
+						"calendars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Conferences - Get Conference ICS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.3/conferences/200014/ics",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"conferences",
+						"200014",
+						"ics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Conferences - Get Conference List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.3/conferences",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"conferences"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Conferences - Get Conference Owner",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.3/conferences/200014/owner",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"conferences",
+						"200014",
+						"owner"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Conferences - Get Conference",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.3/conferences/200014",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"conferences",
+						"200014"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Conferences - Run Conference",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.3/conferences/20001/run",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"conferences",
+						"20001",
+						"run"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Conferences - Share Conference",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.3/conferences/20001/shared",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"conferences",
+						"20001",
+						"shared"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Conferences - Stop Conference",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.3/conferences/20001/stop",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"conferences",
+						"20001",
+						"stop"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Conferences Invitations - Add Invitation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"22@aa111.trueconf.name\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/api/v3.3/conferences/20001/invitations",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"conferences",
+						"20001",
+						"invitations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Conferences Invitations - Delete Invitation",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.3/conferences/20001/invitations/22@aa111.trueconf.name",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"conferences",
+						"20001",
+						"invitations",
+						"22@aa111.trueconf.name"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Conferences Invitations - Edit Invitation",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"222@aa111.trueconf.name\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/api/v3.3/conferences/20001/invitations/22@aa111.trueconf.name",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"conferences",
+						"20001",
+						"invitations",
+						"22@aa111.trueconf.name"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Conferences Invitations - Get Invitation List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.3/conferences/20001/invitations",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"conferences",
+						"20001",
+						"invitations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Conferences Invitations - Get Invitation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.3/conferences/20001/invitations/22@aa111.trueconf.name",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"conferences",
+						"20001",
+						"invitations",
+						"22@aa111.trueconf.name"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Conferences Participants - Get Participant List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.3/conferences/111/participants",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"conferences",
+						"111",
+						"participants"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Conferences Participants - Get Participant",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.3/conferences/111/participants/11",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"conferences",
+						"111",
+						"participants",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Conferences Participants - Invite Participant",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"participant_id\": \"artem1@aa111.trueconf.name\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/api/v3.3/conferences/111/participants",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"conferences",
+						"111",
+						"participants"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Conferences Records - Get Record List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.3/conferences/6560724961/records",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"conferences",
+						"6560724961",
+						"records"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Conferences Records - Download Record",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.3/conferences/6560724961/records/0000001111ac20b2_2021-02-24_15-42-14.mp4/download",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"conferences",
+						"6560724961",
+						"records",
+						"0000001111ac20b2_2021-02-24_15-42-14.mp4",
+						"download"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Conferences Records - Get Record",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.3/conferences/6560724961/records/0000001111ac20b2_2021-02-24_15-42-14.mp4",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"conferences",
+						"6560724961",
+						"records",
+						"0000001111ac20b2_2021-02-24_15-42-14.mp4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Conferences Sessions - Get Conference Session Participants",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.3/conference-sessions/0000000fa38221e3@aa111.trueconf.name%23vcs/participants",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"conference-sessions",
+						"0000000fa38221e3@aa111.trueconf.name%23vcs",
+						"participants"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Conferences Sessions - Get Conference Session",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.3/conference-sessions/0000000fa38221e3@aa111.trueconf.name%23vcs",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"conference-sessions",
+						"0000000fa38221e3@aa111.trueconf.name%23vcs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Conferences Sessions - Invite participant to stand on a podium",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"participant_id\":\"artem1@aa111.trueconf.name\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/api/v3.3/conference-sessions/0000001965888043@aa111.trueconf.name%23vcs/podiums/participants",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"conference-sessions",
+						"0000001965888043@aa111.trueconf.name%23vcs",
+						"podiums",
+						"participants"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Conferences Sessions - Remove participant from a podium",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.3/conference-sessions/0000001965888043@aa111.trueconf.name%23vcs/podiums/participants/artem1@aa111.trueconf.name",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"conference-sessions",
+						"0000001965888043@aa111.trueconf.name%23vcs",
+						"podiums",
+						"participants",
+						"artem1@aa111.trueconf.name"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users - Create Avatar",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "multipart/form-data",
+						"type": "text"
+					},
+					{
+						"key": "image",
+						"value": "C:\\Users\\apukhtin\\Desktop\\avatars\\11.jpg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/apukhtin/Documents/Lightshot/Screenshot_1.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/api/v3.3/users/artem1/avatar",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"users",
+						"artem1",
+						"avatar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users - Create User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"id\": \"user\",\r\n     \"uid\": \"rrr@aa111.trueconf.name\",\r\n     \"password\":\"11\",\r\n     \"avatar\": null,\r\n     \"login_name\": \"user\",\r\n     \"email\": \"user@domain.name\",\r\n     \"display_name\": \"Display Name\",\r\n     \"first_name\": \"First\",\r\n     \"last_name\": \"Last\",\r\n     \"company\": \"Company\",\r\n     \"mobile_phone\": \"\",\r\n     \"work_phone\": \"\",\r\n     \"home_phone\": \"\",\r\n     \"is_active\" : 1,\r\n     \"status\": 0\r\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/api/v3.3/users",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users - Delete Avatar",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.3/users/artem1/avatar",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"users",
+						"artem1",
+						"avatar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users - Delete User",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.3/users/user",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"users",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users - Disconnect User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.3/users/artem2/disconnect",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"users",
+						"artem2",
+						"disconnect"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users - Edit User",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/api/v3.3/users/artem2",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"users",
+						"artem2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users - Get Avatar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.3/users/artem1/avatar",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"users",
+						"artem1",
+						"avatar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users - Get User List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.3/users",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users - Get User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.3/users/11",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"users",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users Contacts - Add Contact",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"contact_id\":\"11111\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/api/v3.3/users/11/addressbook",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"users",
+						"11",
+						"addressbook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users Contacts - Delete Contact",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.3/users/11/addressbook/11111",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"users",
+						"11",
+						"addressbook",
+						"11111"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users Contacts - Edit Contact",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"contact_id\":\"11111\",\r\n    \"display_name\":\"1212121212\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/api/v3.3/users/11/addressbook/11111",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"users",
+						"11",
+						"addressbook",
+						"11111"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users Contacts - Get Contact List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.3/users/11/addressbook",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"users",
+						"11",
+						"addressbook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users Contacts - Get Contact",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.3/users/11/addressbook/11111",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"users",
+						"11",
+						"addressbook",
+						"11111"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Groups - Create Group",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"display_name\":\"111111\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/api/v3.3/groups",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"groups"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Groups - Delete Group",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.3/groups/0002",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"groups",
+						"0002"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Groups - Edit Group",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"display_name\":\"zzzzzzzzzzzzzz\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/api/v3.3/groups/0002",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"groups",
+						"0002"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Groups - Get Group List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.3/groups",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"groups"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Groups - Get Group",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.3/groups/0002",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"groups",
+						"0002"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Groups Users - Add User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\":\"artem1@aa111.trueconf.name\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/api/v3.3/groups/0002/users",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"groups",
+						"0002",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Groups Users - Delete User",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.3/groups/0002/users/artem1",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"groups",
+						"0002",
+						"users",
+						"artem1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Groups Users - Get User List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.3/groups/0002/users",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"groups",
+						"0002",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Groups Users - Get User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.3/groups/0002/users/artem1",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"groups",
+						"0002",
+						"users",
+						"artem1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Presets - Create Preset",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"My Preset\",\r\n    \"type\": \"youtube\",\r\n    \"payload\": {\r\n        \"stream_url\": \"rtmp://a.rtmp.youtube.com/live2\",\r\n        \"stream_key\": \"jseq-jdp1-676g-npj4-3h8c\",\r\n        \"audio_codec\": \"MP3\",\r\n        \"video_codec\": \"H264\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/api/v3.3/broadcast/presets",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"broadcast",
+						"presets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Presets - Get Preset List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.3/broadcast/presets",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"broadcast",
+						"presets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Presets - Get Preset",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.3/broadcast/presets/b5f092",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"broadcast",
+						"presets",
+						"b5f092"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Presets - Edit Preset",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.3/broadcast/presets/b5f092",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"broadcast",
+						"presets",
+						"b5f092"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Presets - Delete Preset",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/v3.3/broadcast/presets/b5f092",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v3.3",
+						"broadcast",
+						"presets",
+						"b5f092"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
