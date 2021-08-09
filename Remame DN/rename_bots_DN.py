@@ -89,6 +89,8 @@ def rename_users(ip, token):                                #сама функц
     #pass
 
 
+# тут указываем источник для имен и фамилий (нужный добавить или разкоментировать)    
+    
 #source = "test_name_1.csv"
 #source= "list_of_russian_male_names.csv"
 source= "test_name.csv"
