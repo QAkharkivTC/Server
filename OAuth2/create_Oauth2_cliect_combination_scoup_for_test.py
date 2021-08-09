@@ -6,12 +6,6 @@ import urllib3
 import certifi
 import ssl
 
-#                   тестовые данные для проверки:
-#
-#for test           qa3.trueconf.net
-#sec_key            1Top3R0Hb81vGUZMkbDBGbdtUmPZVPX6
-
-
 client_id = ''
 client_name = ''
 client_secret = ''
