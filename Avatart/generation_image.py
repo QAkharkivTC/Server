@@ -10,7 +10,7 @@ import ssl
 
 #тестовые данные для проверки:
 #localhost = "qa3.trueconf.net"
-#token = "1Top3R0Hb81vGUZMkbDBGbdtUmPZVPX6"
+#token = ""
 
 users_id = []
 
