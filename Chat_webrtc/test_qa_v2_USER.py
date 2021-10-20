@@ -11,19 +11,11 @@ import time
 
 #python -m pip install selenium
 
-global text
+text = "test data"
 host = "qa3.trueconf.net"
 cid = "sym"
 user_name = "artem"
 password = "11"
-
-def read_text():
-    with open("text_message.txt", "r", encoding='utf-16') as f:
-        text = f.read()
-    return text
-
-
-
 
 class Test3(unittest.TestCase):
     def setUp(self):
@@ -55,10 +47,12 @@ class Test3(unittest.TestCase):
         
         #поле для ввода логина
         login_fl = self.driver.find_element_by_xpath('//*[@id="authorization__input-trueconfId"]')
+        #login_fl.click().cline()
         login_fl.send_keys(user_name)
         
         #поле для ввода пароля
         password_fl = self.driver.find_element_by_xpath('//*[@id="authorization__input-password"]')
+        #password_fl.click().cline()
         password_fl.send_keys(password)
         
         #кнопка войти
@@ -87,17 +81,14 @@ class Test3(unittest.TestCase):
         open_chat = self.driver.find_element_by_xpath('//*[@id="conference-header__button-showChat"]')
         open_chat.click()
 
-        message = read_text()
         
         for i in range(loops):
             #вставить и отправить сообщение
             chat_filed = self.driver.find_element_by_xpath('/html/body/section/div[1]/section/section[2]/section/section/label/div/textarea')
-            chat_filed.send_keys('Сообщение #' + str(i) + ' '+ message)
+            chat_filed.send_keys('Сообщение #' + str(i) + ' '+text)
 
             send_bttn = self.driver.find_element_by_xpath('/html/body/section/div[1]/section/section[2]/section/section/button/i')
             send_bttn.click()
-
-            #time.sleep(0.5) #пауза между сообщениями
             
         time.sleep(5)
         

@@ -11,19 +11,11 @@ import time
 
 #python -m pip install selenium
 
-global text
+text = "test data"
 host = "qa3.trueconf.net"
 cid = "sym"
 user_name = "artem"
 password = "11"
-
-def read_text():
-    with open("text_message.txt", "r", encoding='utf-16') as f:
-        text = f.read()
-    return text
-
-
-
 
 class Test3(unittest.TestCase):
     def setUp(self):
@@ -44,6 +36,10 @@ class Test3(unittest.TestCase):
         self.verificationErrors = []
         self.driver.get(self.base_url)
         driver = self.driver
+        
+        #принять имя гостя (если входить гостем то надо раскоментировать)
+        #save_buttn_guest_name = self.driver.find_element_by_xpath('//*[@id="user-connection-no-authorized-button"]/span')
+        #save_buttn_guest_name.click()
 
         #кнопка меню "войти"
         sigin_in_buttn = self.driver.find_element_by_xpath('//*[@id="main-header__buttons-login"]')
@@ -55,10 +51,12 @@ class Test3(unittest.TestCase):
         
         #поле для ввода логина
         login_fl = self.driver.find_element_by_xpath('//*[@id="authorization__input-trueconfId"]')
+        #login_fl.click().cline()
         login_fl.send_keys(user_name)
         
         #поле для ввода пароля
         password_fl = self.driver.find_element_by_xpath('//*[@id="authorization__input-password"]')
+        #password_fl.click().cline()
         password_fl.send_keys(password)
         
         #кнопка войти
@@ -79,27 +77,41 @@ class Test3(unittest.TestCase):
 
         return self
 	
-    def test_stat(self):    # тест: отправка сообщений в чат конференции
+    def test_stat(self):        # тест для проверки врмени загрузки страницы конференций
         loops = 100
         time.sleep(1)
-
-        #Открыть чат конференции
+        
         open_chat = self.driver.find_element_by_xpath('//*[@id="conference-header__button-showChat"]')
         open_chat.click()
 
-        message = read_text()
+        #chat_filed = self.driver.find_element_by_xpath('/html/body/section/div[1]/section/section[2]/section/section/label/div/textarea')
+        #chat_filed.send_keys(text)
+
+        #send_bttn = self.driver.find_element_by_xpath('/html/body/section/div[1]/section/section[2]/section/section/button/i')
+        #send_bttn.click()
+
         
         for i in range(loops):
-            #вставить и отправить сообщение
             chat_filed = self.driver.find_element_by_xpath('/html/body/section/div[1]/section/section[2]/section/section/label/div/textarea')
-            chat_filed.send_keys('Сообщение #' + str(i) + ' '+ message)
+            chat_filed.send_keys(text + ' ' + str(i))
 
             send_bttn = self.driver.find_element_by_xpath('/html/body/section/div[1]/section/section[2]/section/section/button/i')
             send_bttn.click()
-
-            #time.sleep(0.5) #пауза между сообщениями
             
         time.sleep(5)
+        '''
+        for j in range(loops):
+            driver.refresh()
+            #time.sleep(6)   # ждем 3 сек загрузку страницы, раскомментировать для Chrome! получаем число миллисекунд для браузерного события onload
+            try:
+                start = time.monotonic() #запускаем таймер попытки
+                element = WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.XPATH, "/html/body/div[4]/div[2]/div[1]/section/div/div[2]/div/div[2]/div[2]/div/div/div[1]/button[1]")))
+            finally:
+                result = time.monotonic() - start
+                total_time += result
+                logging.info(" Cheak link "+self.base_url+"/admin/general/info/ " +" loading: "+str(j+1) + " Time loading: "+ str(result) + " sec.")
+        logging.info(" Cheak link "+self.base_url+"/admin/general/info/ " +" loading all : "+str(loops) + " Average load time: "+ str(total_time/loops) + " sec.")
+        '''
         
     def tearDown(self): # блок выполняется после запуска тестов
         self.driver.quit()
